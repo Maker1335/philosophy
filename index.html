@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="all" id="all">
+        <h1>Сможете угадать что тут за философ?</h1>
+        <div class="description">
+            <p>Описание 1:</p>
+            <p>••−•• − −−− −   ••−• •• •−•• −−− ••• −−− ••−•   ••− −− • −• −••− −−−− •• •−••   •−• −−− •−•• −••−   •−• •− −−•• ••− −− •−   −−•• •−   ••• −−−• • −   ••−•• −− −−− −•−• •• •−−−   ••   •−− −−− •−•• ••</p>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </div>
+        <div class="description">
+            <p>Описание 2:</p>
+            <p>йинадартс то юинеджобовсо к ястидовс и реткарах йыньлетацирто адгесв тееми ,меьтсачс тюавызан отч ,от</p>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </div>
+        <div class="description">
+            <p>Описание 3:</p>
+            <p>💣︎□︎❒︎♏︎□︎❖︎♏︎❒︎📪︎ ♒︎♏︎ ⬧︎◆︎♑︎♑︎♏︎⬧︎⧫︎♏︎♎︎ ♋︎⬧︎ ♋︎■︎ □︎◆︎⧫︎♍︎□︎❍︎♏︎ 📫︎ ⬧︎◆︎♓︎♍︎♓︎♎︎♏︎</p>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </div>
+        <div class="description">
+            <p>Описание 4:</p>
+            <p>❄︎♒︎♓︎⬧︎ ♋︎◆︎⧫︎♒︎□︎❒︎ ♐︎❒︎□︎❍︎ ⧫︎♒︎♏︎ ●︎♋︎⬧︎⧫︎ ●︎♏︎♍︎⧫︎◆︎❒︎♏︎</p>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </div>
+        <div class="">
+            <h2>Подсказка про 3 и 4 описание</h2>
+            <p>- . -.- ... -  -. .- .--. .. ... .- -.  -. .-  .-- .. -. --. -.. .. -. --. ...</p>
+        </div>
+        <div class="inputAndButton">
+            <p>
+                <input type="text" id="text"> 
+                <button onclick="funclick()">Ответить</button>
+            </p>
+        </div>
+    </div>
+    <div class="noshow" id="noall">
+        <img src="goodGob.gif" alt="">
+    </div>
+</body>
+<script type="text/javascript">
+    function funclick() {
+        const answer = document.getElementById('text').value;
+        if (answer == 'Артур Шопенгауэр' || answer == 'А. Шопенгауэр' || answer == 'А Шопенгауэр' || answer == 'Шопенгауэр') {
+            alert("Правильно");
+            let el1 =  document.getElementById('all');
+            el1.classList.add("noshow");
+            let el2 =  document.getElementById('noall');
+            el2.classList.add("show");
+        }
+        else {
+            alert("Не правильно");
+        }
+    }
+</script>
+
+</html>
